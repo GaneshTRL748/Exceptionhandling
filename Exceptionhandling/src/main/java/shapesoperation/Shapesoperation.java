@@ -6,7 +6,12 @@ public class Shapesoperation {
 	double triangle;
 	double rectangle;
 	double circle;
-    double length,width,radius,base,height,sidelength;
+        double length;
+        double width;
+       double radius;
+       double base;
+       double height;
+       double sidelength;
     Shapesoperation(double radius)
     {
        this.radius=radius; 
@@ -87,11 +92,11 @@ public class Shapesoperation {
 	   Shapesoperation a1=new Shapesoperation(10);
 	   Shapesoperation a2=new Shapesoperation(8,4,5);
 	   Shapesoperation a3=new Shapesoperation(10,20);
-	   l.info("Area of Circle:"+a1.area(1));
-	   l.info("Area of Rectangle:"+a3.area(2));
-	   l.info("Area of Triangle:"+a2.area(3));
-	   l.info("PeriMeter of Circle:"+a1.perimeter(1));
-	   l.info("PeriMeter of Rectangle:"+a3.perimeter(2));
-	   l.info("Perimeter of Triangle:"+a2.perimeter(3));
+	   l.log("Area of Circle:"+a1.area(1));
+	   l.log("Area of Rectangle:"+a3.area(2));
+	   l.log("Area of Triangle:"+a2.area(3));
+	   l.log("PeriMeter of Circle:"+a1.perimeter(1));
+	   l.log("PeriMeter of Rectangle:"+a3.perimeter(2));
+	   l.log("Perimeter of Triangle:"+a2.perimeter(3));
 	}
 }
