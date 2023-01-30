@@ -42,7 +42,7 @@ public class Studentoperation
     	}
     	return (this.dob.equals(dobv));
     }
-    String Display()
+    String display()
     {
         return this.stuname+" has a "+Double.toString(this.gpa)+" GPA";
     }
@@ -50,6 +50,6 @@ public class Studentoperation
 		Logger l= Logger.getLogger("com.api.jar");
 	 Studentoperation a1=new Studentoperation("ganesh",8.0,'B',"20112001");
 	 a1.updategpa();
-	 l.info(a1.Display());
+	 l.info(a1.display());
 	}
 }
