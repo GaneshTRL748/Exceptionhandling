@@ -36,13 +36,12 @@ public class Creditcardoperation implements Cloneable {
             		return false;
             	}
             }
-            public static void main(String[] args) throws CloneNotSupportedException
+            public static void main(String[] args) 
             {
             	Logger logger= Logger.getLogger("com.api.jar");
             	Creditcardoperation a1=new Creditcardoperation("ganesh","124717","12.11.2027");
             	Creditcardoperation a2=(Creditcardoperation)a1.clone();
-            	//a1.cardnumber="1247";
-            	logger.info("Cloned Details:\ncardnumber:"+a2.cardnumber+"\ncardname:"+a2.cardname+"\nexpirydate:"+a2.expirydate);
-            	logger.info("verification status:"+a1.checkcardnumber(a2.cardnumber));
+            	logger.log("Cloned Details:\ncardnumber:"+a2.cardnumber+"\ncardname:"+a2.cardname+"\nexpirydate:"+a2.expirydate);
+            	logger.log("verification status:"+a1.checkcardnumber(a2.cardnumber));
             }
 }
