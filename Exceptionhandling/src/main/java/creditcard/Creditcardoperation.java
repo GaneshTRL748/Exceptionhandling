@@ -1,6 +1,6 @@
 package creditcard;
 import java.util.*;
-import java.util.logging.Logger;
+import java.util.logging.*;
 public class Creditcardoperation implements Cloneable {
 	         Scanner p=new Scanner(System.in);
 	         Logger logger= Logger.getLogger("com.api.jar");
@@ -41,8 +41,7 @@ public class Creditcardoperation implements Cloneable {
             	Logger logger= Logger.getLogger("com.api.jar");
             	Creditcardoperation a1=new Creditcardoperation("ganesh","124717","12.11.2027");
             	Creditcardoperation a2=(Creditcardoperation)a1.clone();
-            	//a1.cardnumber="1247";
-            	logger.info("Cloned Details:\ncardnumber:"+a2.cardnumber+"\ncardname:"+a2.cardname+"\nexpirydate:"+a2.expirydate);
-            	logger.info("verification status:"+a1.checkcardnumber(a2.cardnumber));
+            	logger.log(evel.INFO,()->"Cloned Details:\ncardnumber:"+a2.cardnumber+"\ncardname:"+a2.cardname+"\nexpirydate:"+a2.expirydate);
+            	logger.log(evel.INFO,()->"verification status:"+a1.checkcardnumber(a2.cardnumber));
             }
 }
