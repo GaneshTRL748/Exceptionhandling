@@ -1,6 +1,6 @@
 package bankoperation;
 import java.util.Scanner;
-import java.util.logging.Logger;
+import java.util.logging.*;
 public class Bankoperation{
     Scanner p=new Scanner(System.in);
     Logger l= Logger.getLogger("com.api.jar");
@@ -73,11 +73,11 @@ public class Bankoperation{
         Bankoperation a1=new Bankoperation("ganesh",1247170000153950L,200,1685);
         a1.deposit(500);
         a1.withdraw(500);
-        l.info("Hi "+a1.accname+"Your Current balance:"+a1.balanceamount());
+        l.log(evel.INFO,()->"Hi "+a1.accname+"Your Current balance:"+a1.balanceamount());
         Bankoperation a2=new Bankoperation("Ruby",124717000153951L,5000,1247);
         a2.deposit(2000);
         a2.withdraw(10000);
-        l.info("Hi "+a2.accname+" Your Current balance:"+a2.balanceamount());
+        l.log(evel.INFO,()->"Hi "+a2.accname+" Your Current balance:"+a2.balanceamount());
     }
 }
 
