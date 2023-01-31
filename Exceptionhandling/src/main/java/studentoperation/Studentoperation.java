@@ -1,6 +1,6 @@
 package studentoperation;
 import java.util.Scanner;
-import java.util.logging.Logger;
+import java.util.logging.*;
 public class Studentoperation
 {
 	Logger l= Logger.getLogger("com.api.jar");
@@ -50,6 +50,6 @@ public class Studentoperation
 		Logger l= Logger.getLogger("com.api.jar");
 	 Studentoperation a1=new Studentoperation("ganesh",8.0,'B',"20112001");
 	 a1.updategpa();
-	 l.info(a1.Display());
+	 l.log(evel.INFO,()->" "+a1.Display());
 	}
 }
