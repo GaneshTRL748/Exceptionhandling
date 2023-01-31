@@ -36,7 +36,7 @@ public class Creditcardoperation implements Cloneable {
             		return false;
             	}
             }
-            public static void main(String[] args) throws CloneNotSupportedException
+            public static void main(String[] args) 
             {
             	Logger logger= Logger.getLogger("com.api.jar");
             	Creditcardoperation a1=new Creditcardoperation("ganesh","124717","12.11.2027");
