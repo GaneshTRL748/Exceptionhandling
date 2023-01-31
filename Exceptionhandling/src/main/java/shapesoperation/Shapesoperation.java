@@ -1,6 +1,6 @@
 package shapesoperation;
 
-import java.util.logging.Logger;
+import java.util.logging.*;
 public class Shapesoperation {
 	Logger l= Logger.getLogger("com.api.jar");
 	double triangle;
@@ -92,11 +92,11 @@ public class Shapesoperation {
 	   Shapesoperation a1=new Shapesoperation(10);
 	   Shapesoperation a2=new Shapesoperation(8,4,5);
 	   Shapesoperation a3=new Shapesoperation(10,20);
-	   l.log("Area of Circle:"+a1.area(1));
-	   l.log("Area of Rectangle:"+a3.area(2));
-	   l.log("Area of Triangle:"+a2.area(3));
-	   l.log("PeriMeter of Circle:"+a1.perimeter(1));
-	   l.log("PeriMeter of Rectangle:"+a3.perimeter(2));
-	   l.log("Perimeter of Triangle:"+a2.perimeter(3));
+	   l.log(Level.INFO,()->"Area of Circle:"+a1.area(1));
+	   l.log(Level.INFO,()->"Area of Rectangle:"+a3.area(2));
+	   l.log(Level.INFO,()->"Area of Triangle:"+a2.area(3));
+	   l.log(Level.INFO,()->"PeriMeter of Circle:"+a1.perimeter(1));
+	   l.log(Level.INFO,()->"PeriMeter of Rectangle:"+a3.perimeter(2));
+	   l.log(Level.INFO,()->"Perimeter of Triangle:"+a2.perimeter(3));
 	}
 }
