@@ -6,7 +6,12 @@ public class Shapesoperation {
 	double triangle;
 	double rectangle;
 	double circle;
-    double length,width,radius,base,height,sidelength;
+    double length;
+    double width;
+    double radius;
+    double base;
+     double height;
+     double sidelength;
     Shapesoperation(double radius)
     {
        this.radius=radius; 
