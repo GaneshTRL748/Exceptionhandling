@@ -42,7 +42,6 @@ public class Studentoperation
     }
      String getnumber()
     {
-   	Scanner p=new Scanner(System.in);
     	String num=p.next();
     	try {
     	       Double.parseDouble(num);
